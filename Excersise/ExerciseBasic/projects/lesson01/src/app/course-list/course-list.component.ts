@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Course } from 'models';
 import { CourseListItemComponent } from './course-list-item/course-list-item.component';
 
 @Component({
@@ -9,4 +10,6 @@ import { CourseListItemComponent } from './course-list-item/course-list-item.com
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.css'],
 })
-export class CourseListComponent {}
+export class CourseListComponent {
+  @Input() courses: Course[] | undefined;
+}
