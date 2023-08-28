@@ -19,5 +19,10 @@ export class AppComponent {
       code: CourseCode.AFP,
       etcs: 10,
     },
+    {
+      name: 'Advanced Object Oriented Programming',
+      code: CourseCode.BOP,
+      etcs: 5,
+    },
   ];
 }
